@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="DriverFormContext" prefHeight="400.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverFormController">
+   <children>
+      <Text layoutX="117.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Name">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="166.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driving License No." />
+      <Text layoutX="137.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Text layoutX="117.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtName" layoutX="228.0" layoutY="31.0" prefHeight="25.0" prefWidth="379.0" />
+      <JFXTextField fx:id="txtNic" layoutX="230.0" layoutY="73.0" prefHeight="25.0" prefWidth="379.0" />
+      <JFXTextField fx:id="txtLicen" layoutX="231.0" layoutY="117.0" prefHeight="25.0" prefWidth="379.0" />
+      <JFXTextField fx:id="tctContact" layoutX="234.0" layoutY="224.0" prefHeight="25.0" prefWidth="379.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="232.0" layoutY="177.0" prefHeight="25.0" prefWidth="379.0" />
+      <JFXButton buttonType="RAISED" layoutX="509.0" layoutY="303.0" onAction="#DriverSaveOnAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #7ed6df; -fx-border-radius: 25; -fx-background-radius: 30;" text="Add Driver">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="58.0" layoutY="311.0" onAction="#backBtn" prefHeight="34.0" prefWidth="123.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 30;" text="Back" />
+   </children>
+</AnchorPane>
